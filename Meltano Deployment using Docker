@@ -21,10 +21,14 @@ c)Run docker run -v  %cd%:/projects -w /projects meltano/meltano init meltano_pr
 d) you should get the image below  - with a huge Meltano sign 
 
 Step 4:
-Next steps:
   cd meltano_project
   Visit https://docs.meltano.com/getting-started/part1 to learn where to go from here
 
+Step 5: 
+Add version control to the project by initiating Git  
+git init
+git add --all
+git commit -m 'Initial Meltano project'
 
 
 
