@@ -1,0 +1,26 @@
+Creating this file to document the steps used in deploying Meltano using docker 
+Step 1:
+# download or update to the latest version
+docker pull meltano/meltano
+
+# Or choose a specific version of Meltano and/or Python:
+# docker pull meltano/meltano:v1.55.0
+# docker pull meltano/meltano:latest-python3.7
+# docker pull meltano/meltano:v1.55.0-python3.8
+
+Step 2:
+# check the currently installed version
+docker run meltano/meltano --version
+
+Step 3:
+Initialize Your Project --using meltano init
+don't forget to mount the current working directory , if using Docker
+a)First you create the path where you want the working directory to be e.g (Users/Oliseamaka.Chiedu/Desktop/remote_task/meltano_project)
+b)Run docker run -v $(pwd):/projects -w /remote_task\meltano_projects init meltano_projects ----for power shell 
+c)Run docker run -v  %cd%:/projects -w /projects meltano/meltano init meltano_project ---worked for CMD
+d) you should get the image below  - with a huge Meltano sign 
+
+
+
+
+
