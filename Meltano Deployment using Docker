@@ -1,4 +1,6 @@
 Creating this file to document the steps used in deploying Meltano using docker 
+Online documentation - https://docs.meltano.com/getting-started/
+
 Step 1:
 # download or update to the latest version
 docker pull meltano/meltano
@@ -30,6 +32,7 @@ git init
 git add --all
 git commit -m 'Initial Meltano project'
 
+This will allow you to use git diff to easily check the impact of the meltano commands you'll run below on your project files, most notably your meltano.yml project file.
 
 
 
