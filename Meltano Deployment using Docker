@@ -31,8 +31,7 @@ Add version control to the project by initiating Git
 git init
 git add --all
 git commit -m 'Initial Meltano project'
-
 This will allow you to use git diff to easily check the impact of the meltano commands you'll run below on your project files, most notably your meltano.yml project file.
 
-
-
+To run commands on docker , prefix with docker run . e.g.
+docker run meltano/meltano --version
